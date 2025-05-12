@@ -93,7 +93,7 @@ gallery.addEventListener("click", function(event) {
         const src = clickedImage.getAttribute("src");
 
         //Build the full-size image filename (e.g., "norris-full.jpeg")
-        const fullSrc = src.replace("-sm.jpeg, "-full.jpeg);
+        const fullSrc = src.replace("-sm.jpeg","-full.jpeg");
 
         //set the modal image's source and alte text
         modalImage.setAttribute("src". fullSrc);
