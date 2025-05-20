@@ -96,7 +96,7 @@ gallery.addEventListener("click", function(event) {
         const fullSrc = src.replace("-sm.jpeg","-full.jpeg");
 
         //set the modal image's source and alte text
-        modalImage.setAttribute("src". fullSrc);
+        modalImage.setAttribute("src", fullSrc);
         modalImage.setAttribute("alt", clickedImage.getAttribute("alt"));
 
         //Open the modal to show the full-size image
