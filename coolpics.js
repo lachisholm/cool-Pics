@@ -49,7 +49,7 @@ function handleResize() {
 }
 
 //Listen for window resize events and adjust menu accordingly
-window.addEventListener("resize, handleResize)");
+window.addEventListener("resize", handleResize);
 
 
 
@@ -72,7 +72,7 @@ const modalImage = document.querySelector("#modalImage");
 
 
 //Get the container that holds all gallery images
-gallery = document.querySelector(".gallery");
+const gallery = document.querySelector(".gallery");
 
 
 
@@ -127,7 +127,7 @@ closeButton.addEventListener("click", function(){
 modal.addEventListener("click", function(event) {
     // Only close the modal if the exact element clicked was the modal itself (not the image or button)
     if (event.target === modal){
-        modal.closest();  // Close the dialog
+        modal.close();  // Close the dialog
     }
 });
 
