@@ -95,6 +95,9 @@ gallery.addEventListener("click", function(event) {
         //Build the full-size image filename (e.g., "norris-full.jpeg")
         const fullSrc = src.replace("-sm.jpeg","-full.jpeg");
 
+        // This will print the full image path your modal is trying to load
+        console.log("Full image path:", fullSrc);
+
         //set the modal image's source and alte text
         modalImage.setAttribute("src", fullSrc);
         modalImage.setAttribute("alt", clickedImage.getAttribute("alt"));
